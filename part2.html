@@ -28,8 +28,27 @@
             width:360px;
             height:50px;
         }
+        div
+        {
+            display:inline-block;
+            text-align: center;
+            width: 85px;
+            background-color: darkred;
+            color: white;
+        }
+        .range
+        {
+
+            position: relative;
+            bottom: 4px;
+        }
+        #colorr
+        {
+            background-color: purple;
+        }
     </style>
 </head>
+
 <body>
 <h1>Please Enter Your Details For Our Dating Website!</h1>
 <form>
@@ -41,7 +60,7 @@
 
         <br>
         <label>Image Preview:</label>
-        <img id="preview">
+        <img id="preview" src="#" alt="Your Image" />
     </fieldset>
 
     <fieldset>
@@ -83,11 +102,21 @@
         <legend>Your Indicators</legend>
 
         <label for="height">Height:</label>
-        Short <input id="height" name="height" type="range" min="0" max="100"> Tall
-
+        <div>
+            Short
+        </div>
+        <input id="height" name="height" type="range" min="0" max="100">
+        <div id="colorr">
+            Tall
+        </div>
         <br>
         <label for="salary">Salary:</label>
-        Poor <input id="salary" name="salary" type="range" min="0" max="100"> Rich
+        <div class="range">
+            Poor
+        </div> <input id="salary" name="salary" type="range" min="0" max="100">
+        <div class="range" id="colorr">
+            Rich
+        </div>
     </fieldset>
 
     <fieldset>
